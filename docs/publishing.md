@@ -4,7 +4,7 @@ Notes for releasing Workbench to other Omarchy and Herdr users. Checked against 
 
 ## Status
 
-The repository is ready to publish; the only steps left are the public ones below.
+Published on 2026-10-14 as a public repository with one squashed commit (Workbench 0.9.0) and the `herdr-plugin` topic. The Omarchy marketplace submission is prepared below but not sent yet. The full development history is kept only locally, on the `private-history` branch; never push that branch, since its early commits name private repositories.
 
 Done:
 
@@ -19,6 +19,8 @@ Done:
 Not tested: a real second machine or user account with Hyprland and Herdr running, Omarchy or Herdr versions other than the ones above, and remote Herdr machines (marked experimental in the README).
 
 ## Release steps
+
+Steps 1, 2 and 4 are done; 3 and 5 remain.
 
 1. Publish a fresh history. Earlier commits contain the names of private repositories in test fixtures, so the public `main` should start from one squashed commit of the current tree. Keep the full history locally (for example as a `private-history` branch) and don't push it.
 2. Force-push that `main` to `github.com/VulpesZerda27/omarchy-workbench`, then make the repository public.
