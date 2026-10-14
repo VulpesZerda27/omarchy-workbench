@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.vulpeszerda27.workbench",
+  "name": "Workbench",
+  "version": "0.9.0",
+  "author": "Martin Leitner",
+  "license": "MIT",
+  "description": "A desk for your coding agents: their outputs, reviewed notes and screenshots, and GitHub issues to hand over. Pairs with a Herdr companion.",
+  "kinds": ["panel", "bar-widget"],
+  "keepLoaded": true,
+  "entryPoints": {
+    "panel": "Workbench.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Workbench",
+    "category": "AI",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}

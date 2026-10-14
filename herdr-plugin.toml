@@ -1,0 +1,29 @@
+id = "io.github.vulpeszerda27.workbench-companion"
+name = "Workbench Companion"
+version = "0.9.0"
+min_herdr_version = "0.8.2"
+description = "Each thread's agent-written brief, outputs and capture link beside the conversation. Install it with the Workbench Omarchy plugin."
+platforms = ["linux"]
+
+[[startup]]
+command = ["python3", "./automation.py", "start"]
+
+[[actions]]
+id = "start-automation"
+title = "Start companion auto-open and capture queue"
+description = "Keep companions open by default and deliver reviewed captures when their agents are ready."
+contexts = ["global"]
+command = ["python3", "./automation.py", "start"]
+
+[[panes]]
+id = "companion"
+title = "Companion"
+placement = "split"
+command = ["./companion.py", "tui"]
+
+[[actions]]
+id = "open"
+title = "Open thread companion"
+description = "Open or focus this thread's companion; repeat in the companion to close it."
+contexts = ["global", "pane"]
+command = ["./companion.py", "open"]
